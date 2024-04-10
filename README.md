@@ -23,7 +23,7 @@ code (without its fencing text) will be edited in a split window using that
 mode.
 
 This is useful to edit code appearing in Markdown files, for example, which I
-use to author blog posts. It is very useful to have the syntax highlighting,
+use to author blog posts. It is useful to have the syntax highlighting,
 indenting, and other helpful features of the language's major mode when editing
 custom code for blog posts.
 

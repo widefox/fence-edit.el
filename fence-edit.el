@@ -1,4 +1,4 @@
-;;; fence-edit.el --- Edit fenced code blocks in a specific mode.
+;;; fence-edit.el --- Edit fenced code blocks in a specific mode
 
 ;; Copyright (c) 2017 Aaron Bieber
 
@@ -17,7 +17,7 @@
 
 ;; Author: Aaron Bieber <aaron@aaronbieber.com>
 ;; Version: 0.1
-;; Package-Requires: ((emacs "24.4"))
+;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: tools mode
 ;; Homepage: https://github.com/aaronbieber/fence-edit.el
 
@@ -150,7 +150,7 @@ don't work well in the snippet view.")
 (defun fence-edit--line-beginning-position-at-pos (pos)
   "Return the position of the beginning of the line at POS.
 
-Used to find the position at which the code to edit begins. The
+Used to find the position at which the code to edit begins.  The
 beginning of the line is needed to handle indentation."
   (interactive)
   (save-excursion
@@ -239,8 +239,7 @@ The assumption is that language `LANG' has a mode `LANG-mode'."
    "Press C-c ' (C-c apostrophe) to save, C-c C-k to abort."))
 
 (defun fence-edit--list-major-modes ()
-  "Return a list of all major modes which are associated with a
-  magic string or file extension.
+  "Return list of all major modes associated with a magic string or file extension.
 
 This will not produce an exhaustive list of major modes but it
 will hopefully list all the major modes that a user would want to
